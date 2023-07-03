@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        @font-face {
+            font-family: "Copperplate Gothic";
+            font-style: normal;
+            font-weight: 400;
+
+            src: local("Copperplate Gothic"),
+            url("/copperplategothic_bold.ttf") format("ttf");
+}
+       .image {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+       }
+       .flexbox-footer{
+        height:50px;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        align-items: center;
+       }
+       .item-footer {
+        box-sizing: border-box;
+        }
+        .flexbox-main{
+        height:100%;
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+       }
+       .item-main {
+        box-sizing: border-box;
+        padding: 40px;
+        text-align: center;
+        }
+       main{
+        min-height: 1220px;
+        font-family: Copperplate Gothic;
+        text-align: center;
+       }
+       footer{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        font-family: Copperplate Gothic;
+       }
+       h1 {
+        height: 15%;
+        font-family: Copperplate Gothic;
+        text-align: center;
+        text-shadow:
+        -1px -1px #000,
+        0 1px 0 #444;
+        transition: all 1s;
+        }
+       body {
+        height: 100%;
+        margin: 0px;
+        background-color:#fffff0;
+        font-family: Copperplate Gothic;
+       }
+       div1{
+        text-align: center;
+        height: 20px;
+       }
+       button {
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 20px;
+        padding: 10px 30px;
+        position: relative;
+        border: 2px solid #f1c40f;
+        color: #f1c40f;
+        font-family: Copperplate Gothic;
+        transition: .4s;
+       }
+       button:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border: 2px solid rgba(0, 0, 0, 0);
+        transition: .4s;
+       }
+       button:hover:after {
+        border-color: #f1c40f;
+        width: calc(100% - 10px);
+        height: calc(100% + 10px);
+       }
+       #email {
+        margin: 10px 10px;
+        padding: 10px 20px;
+        width: 30%;
+        border: 2px solid #f1c40f;
+        font-family: Copperplate Gothic;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Nikita Borisov
+        </h1>
+    </header>
+    <div class="flexbox-main">
+        <div class="item-main">
+            <h2>About me<br></h2>
+            <text>My name is Nikita Borisov. I`m first year bachlore student of Innopolis University.<br> My speciality is Informatics and Computer Engineering. Web development and Neural Networks now is the fields of my investigation.</text>
+        </div>
+        <div class="item-main">
+            <h2>My projects<br></h2>
+            <ul>
+                <li>Street Atr Spot Bot - conducts tours of street art objects in my hometown. Already 3000 users.</li>
+                <li>Sport Achivement system for Innopolis University - now in progress</li>
+            </ul>
+        </div>
+        <div class="item-main">
+            <button  onclick="location.href='comic.html'">Comic</button>
+        </div>
+    </div>
+    <footer>
+        <div1>Contacts:</div1>
+        <div class="flexbox-footer">
+            <div class="item-footer">
+                <a id="inst-link" href = "https://www.instagram.com/lena_lisitsa_n/"><img class="image" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"></a>
+                <a id="tg-link" href = "https://t.me/mf_pups"><img class="image" src="https://cdn-icons-png.flaticon.com/128/3670/3670070.png"></a>
+                <a id="vk-link" href = "https://vk.com/repost_modernist"><img class="image" src="https://cdn-icons-png.flaticon.com/128/4494/4494517.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
