@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
@@ -18,7 +19,7 @@
 			</ul>
 		</div>
         <div class="item-main">
-            <a href="/comics">
+            <a href="{base}/comics">
                 <button>Comics</button>
             </a>
         </div>

@@ -1,4 +1,5 @@
 <script lang="ts">
+
     import { createEventDispatcher } from 'svelte';
 
     type Comic = {
