@@ -16,7 +16,7 @@ const config = {
 		adapter: adapter()
 	},
 	paths: {
-		base: dev ? '' : '/your-repo-name',
+		base: dev ? '' : '/n-bor1sov.github.io',
 	  },
 };
 
