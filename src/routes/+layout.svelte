@@ -5,7 +5,7 @@
 </script>
 <svelte:head>
   <title>Developer Portfolio</title>
-  <link rel="icon" href="$public/favicon.png" />
+  <link rel="icon" href="../../favicon.png" />
   <meta name="author" content="Nikita Borisov" />
   <meta name="description" content="Here you can see some usefull information about me as a developer." />
 </svelte:head>
