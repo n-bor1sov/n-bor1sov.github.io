@@ -1,0 +1,26 @@
+{
+  "extends": ["eslint:recommended"],
+
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "rules": {
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-extra-boolean-cast": ["error", { "enforceForLogicalOperands": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", "svelte", ".ts", ".tsx"]
+      }
+    }
+  }
+}

@@ -1,17 +1,13 @@
-<script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
-</script>
+
 
 <div class="container">
     <div>
         <h3>Contacts</h3>
     </div>
     <div class="item-footer">
-        <a id="inst-link" href = "https://www.instagram.com/lena_lisitsa_n/"><img class="image" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"></a>
-        <a id="tg-link" href = "https://t.me/mf_pups"><img class="image" src="https://cdn-icons-png.flaticon.com/128/3670/3670070.png"></a>
-        <a id="vk-link" href = "https://vk.com/repost_modernist"><img class="image" src="https://cdn-icons-png.flaticon.com/128/4494/4494517.png"></a>
+        <a id="inst-link" href = "https://www.instagram.com/lena_lisitsa_n/"><img class="image" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt=""></a>
+        <a id="tg-link" href = "https://t.me/mf_pups"><img class="image" src="https://cdn-icons-png.flaticon.com/128/3670/3670070.png" alt=""></a>
+        <a id="vk-link" href = "https://vk.com/repost_modernist"><img class="image" src="https://cdn-icons-png.flaticon.com/128/4494/4494517.png" alt=""></a>
     </div>
 </div>
 

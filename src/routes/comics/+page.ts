@@ -1,11 +1,24 @@
-import { dev } from '$app/environment';
 
+import type { Comic } from "../types";
 
+export const ssr = true;
 
-// we don't need any JS on this page, though we'll load
-// it in dev so that we get hot module replacement
-export const csr = dev;
+export const prerender = true
 
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-export const prerender = true;
+export async function load() {
+    const email = 'n.borisov@innopolis.university'
+    const url = 'https://fwd.innopolis.university/api/hw2?email=' + email;
+    const id = await fetch(url).then(async (res) => { res.json()})
+        .catch((error: string ) => {
+            console.log(error);
+        });
+    
+    const com: Comic = await fetch('https://fwd.innopolis.university/api/comic?id=' + id)
+        .then(async (response) => {
+            await response.json();
+        })
+        .catch((error: string ) => {
+            console.log(error);
+        });
+    return com;
+} 
