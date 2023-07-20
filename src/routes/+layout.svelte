@@ -39,9 +39,24 @@
     height: auto;
   }
   footer {
-	display: flex;
+	  display: flex;
     bottom: 0;
     width: 100vw;
-  }
+		justify-content: center;
+		align-items: center;
+		padding: 12px;
+		position: absolute;
+        bottom: 0;
+		left: 0;
+        width: 100%;
+        height: 100px;
+        font-family: Copperplate Gothic;
+	}
+
+	@media (min-width: 480px) {
+		footer {
+			padding: 12px 0;
+		}
+	}
   
 </style>

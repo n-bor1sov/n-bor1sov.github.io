@@ -80,7 +80,7 @@
         </div>
         <div class="item-main">
             <p id="id">{idField}</p>
-            <img id="comic-img" src={comicImg}>
+            <img id="comic-img" src={comicImg} alt="">
             <p id="comic-title">{comicTitle}</p>
             <p id="pub-date">{date}</p>
         </div>

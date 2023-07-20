@@ -7,7 +7,7 @@ export const prerender = true;
 export async function load() {
   const email = "n.borisov@innopolis.university";
   const url = "https://fwd.innopolis.university/api/hw2?email=" + email;
-  const id = await fetch(url)
+  const id = await fetch(url) //i dont know how to fix that id is void
     .then(async (res) => {
       res.json();
     })
@@ -15,14 +15,14 @@ export async function load() {
       console.log(error);
     });
 
-  const com: Comic = await fetch(
-    "https://fwd.innopolis.university/api/comic?id=" + id,
-  )
-    .then(async (response) => {
-      await response.json();
-    })
-    .catch((error: string) => {
-      console.log(error);
-    });
-  return com;
+  // const com: Comic = await fetch(
+  //   "https://fwd.innopolis.university/api/comic?id=" + id,
+  // )
+  //   .then(async (response) => {
+  //     await response.json();
+  //   })
+  //   .catch((error: string) => {
+  //     console.log(error);
+  //   });
+  // return com;
 }
